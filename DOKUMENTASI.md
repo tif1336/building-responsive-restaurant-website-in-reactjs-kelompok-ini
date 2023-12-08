@@ -1,9 +1,9 @@
 # Dokumentasi Tugas 2: Membuat Website Restoran dengan ReactJS
 ### Nama Kelompok: Kelompok Ini
 ### Anggota Kelompok
-### 1. L200XXXXXX Aldin Nasrun Minalloh
-### 2. L200XXXXXX Abdul Khadir Djaelani
-### 3. L200XXXXXX Tiara Indah Septy
+### 1. L200214208 Aldin Nasrun Minalloh
+### 2. L200214167 Abdul Kadir Djaelani
+### 3. L200214215 Tiara Indah Septy
 
 <br>
 
