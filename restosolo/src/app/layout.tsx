@@ -4,7 +4,7 @@ import Navbar from "./components/navbar";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import About from "./about/page";
-import CustomizedAccordions from "./faq/page";
+import Footer from "./footer/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={inter.className}>
         <Navbar />
         <About />
-        <CustomizedAccordions />
+        <Footer />
 
         {children}
       </body>
