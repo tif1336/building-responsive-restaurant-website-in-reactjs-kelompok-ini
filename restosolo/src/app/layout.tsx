@@ -5,6 +5,7 @@ import "./globals.css";
 import ResponsiveAppBar from "./components/navbar";
 import About from "./home/page";
 import CustomizedAccordions from "./faq/page";
+import Footer from "./footer/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <ResponsiveAppBar />
         <About />
         <CustomizedAccordions />
+        <Footer />
 
         {children}
       </body>
