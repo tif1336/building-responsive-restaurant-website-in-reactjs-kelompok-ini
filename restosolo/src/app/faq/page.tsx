@@ -10,6 +10,11 @@ import MuiAccordionSummary, {
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 
+interface FaqApi {
+  question: string;
+  answer: string;
+}
+
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
@@ -49,23 +54,21 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: "1px solid rgba(223, 94, 0, 100)",
 }));
 
-interface CustomizedAccordionsProps {
-  id: number;
-  question: string;
-  answer: string;
-}
-
-export default function CustomizedAccordions({
-  id,
-  question,
-  answer,
-}: CustomizedAccordionsProps) {
-  const [expanded, setExpanded] = React.useState<number | false>(false);
+export default function CustomizedAccordions() {
+  const [expanded, setExpanded] = React.useState<string | false>("panel1");
 
   const handleChange =
-    (panel: number) => (event: React.SyntheticEvent, newExpanded: boolean) => {
+    (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
       setExpanded(newExpanded ? panel : false);
     };
+
+  const [faq, setFaq] = React.useState<FaqApi[]>([]);
+
+  React.useEffect(() => {
+    fetch("http://127.0.0.1:8000/api/faq/")
+      .then((response) => response.json())
+      .then((data) => setFaq(data));
+  }, []);
 
   return (
     <div
@@ -88,27 +91,61 @@ export default function CustomizedAccordions({
           mr: 2,
           display: { xs: "flex", md: "flex" },
           fontFamily: "sans-serif",
+          fontWeight: 700,
           letterSpacing: ".2rem",
+          color: "inherit",
           textDecoration: "none",
           marginBottom: "2rem",
         }}
       >
         Frequently Asked Questions
       </Typography>
-      {/* Use question and answer directly */}
       <Accordion
-        expanded={expanded === id}
-        onChange={handleChange(id)}
-        style={{ width: "100%", maxWidth: "1000px" }}
+        expanded={expanded === "panel1"}
+        onChange={handleChange("panel1")}
+        style={{ width: "100%", maxWidth: "1000px" }} // Adjust the max width as needed
       >
-        <AccordionSummary
-          aria-controls={`panel${id}-content`}
-          id={`panel${id}-header`}
-        >
-          <Typography>{question}</Typography>
+        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+          <Typography>{faq.length > 0 ? faq[0].question : ""}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>{answer}</Typography>
+          <Typography>{faq.length > 0 ? faq[0].answer : ""}</Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion
+        expanded={expanded === "panel2"}
+        onChange={handleChange("panel2")}
+        style={{ width: "100%", maxWidth: "1000px" }}
+      >
+        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
+          <Typography>{faq.length > 0 ? faq[1].question : ""}</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>{faq.length > 0 ? faq[1].answer : ""}</Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion
+        expanded={expanded === "panel3"}
+        onChange={handleChange("panel3")}
+        style={{ width: "100%", maxWidth: "1000px" }}
+      >
+        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+          <Typography>{faq.length > 0 ? faq[2].question : ""}</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>{faq.length > 0 ? faq[2].answer : ""}</Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion
+        expanded={expanded === "panel4"}
+        onChange={handleChange("panel4")}
+        style={{ width: "100%", maxWidth: "1000px" }}
+      >
+        <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
+          <Typography>{faq.length > 0 ? faq[3].question : ""}</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>{faq.length > 0 ? faq[3].answer : ""}</Typography>
         </AccordionDetails>
       </Accordion>
     </div>
