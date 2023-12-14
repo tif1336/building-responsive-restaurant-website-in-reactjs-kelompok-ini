@@ -69,6 +69,7 @@ export default function CustomizedAccordions({
 
   return (
     <div
+      className="px-4"
       style={{
         display: "flex",
         flexDirection: "column",
@@ -82,13 +83,13 @@ export default function CustomizedAccordions({
         variant="h5"
         noWrap
         component="a"
+        className="text-orange-600"
         sx={{
           mr: 2,
           display: { xs: "flex", md: "flex" },
           fontFamily: "sans-serif",
           fontWeight: 700,
           letterSpacing: ".2rem",
-          color: "inherit",
           textDecoration: "none",
           marginBottom: "2rem",
         }}

@@ -3,11 +3,11 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <section id="home" className="pt-40 pb-48 bg-primary">
+      <section id="home" className="pt-20 pb-20 bg-primary">
         <div className="container">
           <div className="flex flex-wrap">
             <div className="w-full self-center px-4 lg:w-1/2">
-              <span className="block font-bold text-white text-center text-4xl mt-1 lg:text-5xl leading-9">
+              <span className="block font-bold text-white text-center text-4xl mt-1 lg:text-5xl leading-9" style={{ lineHeight: "1.2" }}>
                 VISIT OUR SOLO RESTO FOOD AND BEVERAGES
               </span>
             </div>
