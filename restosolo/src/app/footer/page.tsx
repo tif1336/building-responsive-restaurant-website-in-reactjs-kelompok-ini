@@ -1,14 +1,6 @@
 import React from "react";
 
 const Footer: React.FC = () => {
-  const [profile, setProfile] = React.useState({});
-  
-      React.useEffect(() => {
-          fetch("http://127.0.0.1:8000/api/profile/")
-          .then(response => response.json())
-          .then(data => setProfile(data))
-      }, []);
-
   return (
     /* Footer Section Start */
     <footer className="bg-secondary pt-24 pb-12">
