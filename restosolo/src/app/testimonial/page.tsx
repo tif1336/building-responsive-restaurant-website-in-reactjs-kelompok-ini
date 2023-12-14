@@ -1,6 +1,21 @@
+"use client";
+
 import React from "react";
 
+interface TestimonialApi {
+  name: string;
+  description: string;
+}
+
 const Testimonial = () => {
+  const [testimonial, setTestimonial] = React.useState<TestimonialApi[]>([]);
+
+  React.useEffect(() => {
+    fetch("http://127.0.0.1:8000/api/testimonial/")
+      .then((response) => response.json())
+      .then((data) => setTestimonial(data));
+  }, []);
+
   return (
     <div>
       <section id="blog" className="pt-36 pb-32 bg-primary">
@@ -10,12 +25,11 @@ const Testimonial = () => {
               <h4 className="font-bold text-lg text-orange-600 mb-2">
                 Testimonial
               </h4>
-              <h2 className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">
-                Informasi Terkini
+              <h2 className="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">
+                What They Say About Us?
               </h2>
-              <p className="font-medium text-md text-white opacity-40 md:text-lg">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
-                recusandae fugit sit non.
+              <p className="font-medium text-md text-white opacity-70 md:text-lg">
+                These are the thought of our beloved customers 💖
               </p>
             </div>
           </div>
@@ -24,19 +38,18 @@ const Testimonial = () => {
             <div className="w-full px-4 lg:w-1/2 xl:w-1/3">
               <div className="bg-secondary rounded-xl shadow-lg overflow-hidden mb-10">
                 <img
-                  src="https://source.unsplash.com/360x200?programming"
+                  src="https://source.unsplash.com/360x200?avatar"
                   alt="Programming"
                   className="w-full"
                 />
                 <div className="py-8 px-6">
                   <h3>
                     <a className="block mb-3 font-semibold text-xl text-dark hover:text-orange-600 truncate">
-                      Review Keyboard
+                      {testimonial.length > 0 ? testimonial[0].name : ""}
                     </a>
                   </h3>
                   <p className="font-medium text-base text-white opacity-40 mb-6">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Doloribus, accusamus!
+                    {testimonial.length > 0 ? testimonial[0].description : ""}
                   </p>
                 </div>
               </div>
@@ -44,19 +57,18 @@ const Testimonial = () => {
             <div className="w-full px-4 lg:w-1/2 xl:w-1/3">
               <div className="bg-secondary rounded-xl shadow-lg overflow-hidden mb-10">
                 <img
-                  src="https://source.unsplash.com/360x200?coffee"
+                  src="https://source.unsplash.com/360x200?avatar"
                   alt="Coffee"
                   className="w-full"
                 />
                 <div className="py-8 px-6">
                   <h3>
                     <a className="block mb-3 font-semibold text-xl text-dark hover:text-orange-600 truncate">
-                      Menikmati Secangkir Kopi
+                      {testimonial.length > 0 ? testimonial[1].name : ""}
                     </a>
                   </h3>
                   <p className="font-medium text-base text-white opacity-40 mb-6">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Doloribus, accusamus!
+                    {testimonial.length > 0 ? testimonial[1].description : ""}
                   </p>
                 </div>
               </div>
@@ -64,19 +76,18 @@ const Testimonial = () => {
             <div className="w-full px-4 lg:w-1/2 xl:w-1/3">
               <div className="bg-secondary rounded-xl shadow-lg overflow-hidden mb-10">
                 <img
-                  src="https://source.unsplash.com/360x200?keyboard+mechanical"
+                  src="https://source.unsplash.com/360x200?avatar"
                   alt="Keyboard Mechanical"
                   className="w-full"
                 />
                 <div className="py-8 px-6">
                   <h3>
                     <a className="block mb-3 font-semibold text-xl text-dark hover:text-orange-600 truncate">
-                      Tips Belajar Programming
+                      {testimonial.length > 0 ? testimonial[2].name : ""}
                     </a>
                   </h3>
                   <p className="font-medium text-base text-white opacity-40 mb-6">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Doloribus, accusamus!
+                    {testimonial.length > 0 ? testimonial[2].description : ""}
                   </p>
                 </div>
               </div>
