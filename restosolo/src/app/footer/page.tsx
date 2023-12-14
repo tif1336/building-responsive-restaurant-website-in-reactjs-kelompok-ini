@@ -3,7 +3,7 @@ import React from "react";
 const Footer: React.FC = () => {
   return (
     /* Footer Section Start */
-    <footer className="bg-dark pt-24 pb-12">
+    <footer className="bg-secondary pt-24 pb-12">
       <div className="container">
         <div className="flex flex-wrap">
           <div className="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">

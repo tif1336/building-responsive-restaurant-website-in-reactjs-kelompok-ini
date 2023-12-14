@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+const Home = () => {
   return (
     <>
       <section id="home" className="pt-40 pb-48 bg-primary">
@@ -29,4 +29,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Home;

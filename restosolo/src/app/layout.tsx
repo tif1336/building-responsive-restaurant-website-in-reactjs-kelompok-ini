@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import ResponsiveAppBar from "./components/navbar";
-import About from "./home/page";
+import ResponsiveAppBar from "./components/navbar/page";
+import Home from "./home/page";
 import CustomizedAccordions from "./faq/page";
 import Footer from "./footer/page";
 
@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ResponsiveAppBar />
-        <About />
+        <Home />
         <CustomizedAccordions />
         <Footer />
 
