@@ -21,7 +21,7 @@ export default function MenuContainer() {
   };
 
   React.useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/menus/")
+    fetch("https://resto-solo-app-production.up.railway.app/api/menus/")
       .then((response) => response.json())
       .then((data) => setMenus(data));
   }, []);
