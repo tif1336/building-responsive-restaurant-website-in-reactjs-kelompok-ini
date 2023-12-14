@@ -132,11 +132,11 @@ const Footer: React.FC = () => {
             </a>
           </div>
           <p className="font-medium text-sm text-slate-400 text-center">
-            Dibuat dengan 💖 oleh{" "}
+            Built with 💖 by{" "}
             <a href="#" className="font-bold text-white ">
               Kelompok Ini
             </a>
-            , menggunakan{" "}
+            , using{" "}
             <a href="https://tailwindcss.com" target="_blank" className="font-bold text-orange-600">
               Next js & Tailwind CSS
             </a>
