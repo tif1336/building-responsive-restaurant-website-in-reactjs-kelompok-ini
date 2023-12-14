@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     # local apps
     'menus.apps.MenusConfig',
     'profiles.apps.ProfilesConfig',
+    'testimonial.apps.TestimonialConfig',
 ]
 
 MIDDLEWARE = [
