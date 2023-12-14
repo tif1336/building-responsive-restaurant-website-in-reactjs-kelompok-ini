@@ -28,7 +28,13 @@ export default function RootLayout({
         <ResponsiveAppBar />
         <Home />
         <About />
-        <MenuCard name={""} image={""} price={0} category={""} description={""} />
+        <MenuCard
+          name={""}
+          image={""}
+          price={0}
+          category={""}
+          description={""}
+        />
         <CustomizedAccordions />
         <Testimonial />
         <Footer />

@@ -101,6 +101,8 @@ export default function CustomizedAccordions() {
         Frequently Asked Questions
       </Typography>
       <Accordion
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
         style={{ width: "100%", maxWidth: "1000px" }} // Adjust the max width as needed
@@ -113,6 +115,8 @@ export default function CustomizedAccordions() {
         </AccordionDetails>
       </Accordion>
       <Accordion
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
         style={{ width: "100%", maxWidth: "1000px" }}
@@ -125,6 +129,8 @@ export default function CustomizedAccordions() {
         </AccordionDetails>
       </Accordion>
       <Accordion
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
         expanded={expanded === "panel3"}
         onChange={handleChange("panel3")}
         style={{ width: "100%", maxWidth: "1000px" }}
@@ -137,6 +143,8 @@ export default function CustomizedAccordions() {
         </AccordionDetails>
       </Accordion>
       <Accordion
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
         expanded={expanded === "panel4"}
         onChange={handleChange("panel4")}
         style={{ width: "100%", maxWidth: "1000px" }}
