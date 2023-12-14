@@ -11,7 +11,7 @@ const Testimonial = () => {
   const [testimonial, setTestimonial] = React.useState<TestimonialApi[]>([]);
 
   React.useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/testimonial/")
+    fetch("https://resto-solo-app-production.up.railway.app/api/testimonial/")
       .then((response) => response.json())
       .then((data) => setTestimonial(data));
   }, []);

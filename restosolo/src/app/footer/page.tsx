@@ -19,14 +19,14 @@ const Footer: React.FC = () => {
   const [profile, setProfile] = React.useState<ProfileData[]>([]);
 
   React.useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/profile/")
+    fetch("https://resto-solo-app-production.up.railway.app/api/profile/")
       .then((response) => response.json())
       .then((data) => setProfile(data));
   }, []);
 
   const [openHours, setOpenHours] = React.useState<OpeningHour[]>([]);
   React.useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/opening-hour/")
+    fetch("https://resto-solo-app-production.up.railway.app/api/opening-hour/")
       .then((response) => response.json())
       .then((data) => setOpenHours(data));
   }, []);

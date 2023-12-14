@@ -44,7 +44,7 @@ function ResponsiveAppBar() {
 
   React.useEffect(() => {
     // Fetch the logo image from the API
-    fetch("http://127.0.0.1:8000/api/profile/")
+    fetch("https://resto-solo-app-production.up.railway.app/api/profile/")
       .then((response) => response.json())
       .then((data) => {
         setLogo(data[0].logo);

@@ -65,7 +65,7 @@ export default function CustomizedAccordions() {
   const [faq, setFaq] = React.useState<FaqApi[]>([]);
 
   React.useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/faq/")
+    fetch("https://resto-solo-app-production.up.railway.app/api/faq/")
       .then((response) => response.json())
       .then((data) => setFaq(data));
   }, []);
