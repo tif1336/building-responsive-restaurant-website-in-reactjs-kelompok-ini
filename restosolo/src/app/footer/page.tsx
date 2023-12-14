@@ -6,43 +6,57 @@ const Footer: React.FC = () => {
     <footer className="bg-secondary pt-24 pb-12">
       <div className="container">
         <div className="flex flex-wrap">
-          <div className="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+          <div className="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/4">
             <h2 className="font-bold text-4xl text-white mb-5">Resto Solo</h2>
-            <p className="font-bold text-2xl mb-2">example@gmail.com</p>
+            <p className="font-bold text-2xl mb-2">restosolo@mail.com</p>
             <p>Jl. Jeruk No.03</p>
             <p>Surakarta</p>
           </div>
-          <div className="w-full px-4 mb-12 md:w-1/3">
-            <h3 className="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
+
+          <div className="w-full px-4 mb-12 md:w-1/4">
+            <h3 className="font-semibold text-xl text-white mb-5">Get in Touch</h3>
             <ul>
               <li className="text-slate-300">
                 <a href="#" className="inline-block text-base hover:text-primary mb-3">
-                  Programming
+                  Signature Menu
                 </a>
               </li>
               <li className="text-slate-300">
                 <a href="#" className="inline-block text-base hover:text-primary mb-3">
-                  Gaya Hidup
+                  Careers
                 </a>
               </li>
               <li className="text-slate-300">
                 <a href="#" className="inline-block text-base hover:text-primary mb-3">
-                  Teknologi
+                  Direction
                 </a>
               </li>
             </ul>
           </div>
-          <div className="w-full px-4 mb-12 md:w-1/3">
-            <h3 className="font-semibold text-xl text-white mb-5">Tautan</h3>
+
+          <div className="w-full px-4 mb-12 md:w-1/4">
+            <h3 className="font-semibold text-xl text-white mb-5">Opening Hours</h3>
+            <p className="text-slate-300 mb-3">
+              Monday - Friday <br />
+              at 09.00 a.m - 23.00 p.m
+            </p>
+            <p className="text-slate-300">
+              Saturday - Sunday <br />
+              at 08.00 a.m - 24.00 p.m
+            </p>
+          </div>
+
+          <div className="w-full px-4 mb-12 md:w-1/4">
+            <h3 className="font-semibold text-xl text-white mb-5">Site Links</h3>
             <ul>
               <li className="text-slate-300">
                 <a href="#home" className="inline-block text-base hover:text-primary mb-3">
-                  Beranda
+                  Home
                 </a>
               </li>
               <li className="text-slate-300">
                 <a href="#about" className="inline-block text-base hover:text-primary mb-3">
-                  Tentang Saya
+                  About
                 </a>
               </li>
               <li className="text-slate-300">
