@@ -7,6 +7,7 @@ import Home from "./home/page";
 import CustomizedAccordions from "./faq/page";
 import Footer from "./footer/page";
 import About from "./about/page";
+import Testimonial from "./testimonial/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Home />
         <About />
         <CustomizedAccordions id={0} question={""} answer={""} />
+        <Testimonial />
         <Footer />
 
         {children}

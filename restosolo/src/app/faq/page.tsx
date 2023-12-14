@@ -83,12 +83,11 @@ export default function CustomizedAccordions({
         variant="h5"
         noWrap
         component="a"
-        className="text-orange-600"
+        className="text-orange-600 text-lg font-bold"
         sx={{
           mr: 2,
           display: { xs: "flex", md: "flex" },
           fontFamily: "sans-serif",
-          fontWeight: 700,
           letterSpacing: ".2rem",
           textDecoration: "none",
           marginBottom: "2rem",
