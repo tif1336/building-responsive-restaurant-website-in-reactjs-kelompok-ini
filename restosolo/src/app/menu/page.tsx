@@ -107,55 +107,68 @@ export default class MenuContainer extends Component<{}, MenuContainerState> {
             paddingY={2}
             paddingBottom={6}
           >
-            {menus.map((menu) => (
-              <Grid component="div" key={menu.name} xs={9} sm={6} md={4} lg={3}>
-                <Card
-                  sx={{
-                    maxWidth: 345,
-                    minHeight: 400,
-                    marginX: 2,
-                    marginY: 2,
-                    bgcolor: "#2B2A32",
-                    color: "#FFFFFF",
-                  }}
+            {menus
+              .filter(
+                (menu) =>
+                  menu.category.toLowerCase() === activeButton ||
+                  activeButton === "all"
+              )
+              .map((menu) => (
+                <Grid
+                  component="div"
+                  key={menu.name}
+                  xs={9}
+                  sm={6}
+                  md={4}
+                  lg={3}
                 >
-                  <CardHeader
-                    avatar={
-                      <Avatar
-                        variant="rounded"
-                        sx={{ bgcolor: "#1A1A1A" }}
-                        aria-label="price"
-                        style={{ borderRight: "1px solid #DDDDDD" }}
-                      >
-                        {`$${menu.price}`}
-                      </Avatar>
-                    }
-                    title={menu.name}
-                    subheader={`Hidangan ${menu.category}`}
-                    subheaderTypographyProps={{ color: "#FFFFFF" }}
-                  />
-                  <CardMedia
-                    component="img"
-                    style={{
-                      objectFit: "cover",
-                      width: "100%",
-                      height: "200px",
+                  <Card
+                    sx={{
+                      maxWidth: 345,
+                      minHeight: 400,
+                      marginX: 2,
+                      marginY: 2,
+                      bgcolor: "#2B2A32",
+                      color: "#FFFFFF",
                     }}
-                    src={menu.image}
-                    alt="Paella dish"
-                  />
-                  <CardContent>
-                    <Typography
-                      variant="body2"
-                      color="text-white"
-                      style={{ height: "160px" }}
-                    >
-                      {truncateText(menu.description, 10)}
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-            ))}
+                  >
+                    <CardHeader
+                      avatar={
+                        <Avatar
+                          variant="rounded"
+                          sx={{ bgcolor: "#1A1A1A" }}
+                          aria-label="price"
+                          style={{ borderRight: "1px solid #DDDDDD" }}
+                        >
+                          {`$${menu.price}`}
+                        </Avatar>
+                      }
+                      title={menu.name}
+                      subheader={`Hidangan ${menu.category}`}
+                      subheaderTypographyProps={{ color: "#FFFFFF" }}
+                    />
+                    <CardMedia
+                      component="img"
+                      style={{
+                        objectFit: "cover",
+                        width: "100%",
+                        height: "200px",
+                      }}
+                      src={menu.image}
+                      alt="Paella dish"
+                    />
+                    <CardContent>
+                      <Typography
+                        variant="body2"
+                        color="text-white"
+                        style={{ height: "160px" }}
+                      >
+                        {truncateText(menu.description, 10)}
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Grid>
+              ))}
           </Grid>
         </Box>
       </div>
