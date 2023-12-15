@@ -8,7 +8,8 @@ import CustomizedAccordions from "./faq/page";
 import Footer from "./footer/page";
 import About from "./about/page";
 import Testimonial from "./testimonial/page";
-import MenuCard from "./menu/page";
+import MenuContainer from "./menu/page";
+// import MenuContainer from "./menu/pageApi";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +29,8 @@ export default function RootLayout({
         <ResponsiveAppBar />
         <Home />
         <About />
-        <MenuCard name={""} image={""} price={0} category={""} description={""} />
+        <MenuContainer />
+        {/* <MenuCard name={""} image={""} price={0} category={""} description={""} /> */}
         <CustomizedAccordions />
         <Testimonial />
         <Footer />
