@@ -1,7 +1,6 @@
 "use client";
 
 import React, { Component } from "react";
-
 import {
   Avatar,
   Box,
@@ -22,6 +21,7 @@ function truncateText(text: string, sentenceCount: number): string {
 
   return truncatedText;
 }
+
 
 interface MenuApi {
   name: string;
