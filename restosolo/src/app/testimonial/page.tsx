@@ -18,7 +18,7 @@ const Testimonial = () => {
 
   return (
     <div>
-      <section id="blog" className="pt-36 pb-32 bg-primary">
+      <section id="testimonial" className="pt-36 pb-32 bg-primary">
         <div className="container">
           <div className="w-full px-4">
             <div className="max-w-xl mx-auto text-center mb-16">

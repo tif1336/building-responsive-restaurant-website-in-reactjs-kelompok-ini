@@ -71,14 +71,14 @@ export default function CustomizedAccordions() {
   }, []);
 
   return (
-    <div
+    <div id="faq"
       className="px-4"
       style={{
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         paddingTop: "2rem",
-        paddingBottom: "4rem",
+        paddingBottom: "2rem",
         backgroundColor: "#18171C",
       }}
     >

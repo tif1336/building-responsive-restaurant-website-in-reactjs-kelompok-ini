@@ -12,7 +12,7 @@ const About = () => {
     // Initialize AOS
     AOS.init({
       duration: 800, // Durasi animasi dalam milidetik
-      once: true, // Animasi hanya terjadi sekali
+      once: false, // Animasi hanya terjadi sekali
     });
   }, []);
   return (
