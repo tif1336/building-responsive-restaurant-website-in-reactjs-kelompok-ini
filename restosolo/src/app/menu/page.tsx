@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+"use client";
+
+import React, { Component } from "react";
 
 import {
   Avatar,
@@ -9,8 +11,17 @@ import {
   CardMedia,
   Grid,
   Typography,
-} from '@mui/material';
-import CustomButton from './button';
+} from "@mui/material";
+import CustomButton from "./button";
+
+function truncateText(text: string, sentenceCount: number): string {
+  const sentences = text.split(". ");
+  console.log("Sentences:", sentences); // Tambahkan log untuk melihat nilai sentences
+  const truncatedText = sentences.slice(0, sentenceCount).join(". ");
+  console.log("Truncated Text:", truncatedText); // Tambahkan log untuk melihat nilai truncatedText
+
+  return truncatedText;
+}
 
 interface MenuApi {
   name: string;
@@ -30,7 +41,7 @@ export default class MenuContainer extends Component<{}, MenuContainerState> {
     super(props);
     this.state = {
       menus: [],
-      activeButton: 'all',
+      activeButton: "all",
     };
   }
 
@@ -39,7 +50,7 @@ export default class MenuContainer extends Component<{}, MenuContainerState> {
   };
 
   componentDidMount() {
-    fetch('https://resto-solo-app-production.up.railway.app/api/menus/')
+    fetch("https://resto-solo-app-production.up.railway.app/api/menus/")
       .then((response) => response.json())
       .then((data: MenuApi[]) => this.setState({ menus: data }));
   }
@@ -47,87 +58,107 @@ export default class MenuContainer extends Component<{}, MenuContainerState> {
   render() {
     const { menus, activeButton } = this.state;
 
-
-  return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid
-        container
-        spacing={2}
-        paddingY={3}
-        style={{ alignItems: 'center', justifyContent: 'center' }}
-      >
-        <Grid component="div" md={2} xs={6} sm={6}>
-          <CustomButton
-            isactive={activeButton === 'all'}
-            onClick={() => this.handleClick('all')}
+    return (
+      <div className="bg-primary">
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid
+            className="container items-center justify-center px-4 pb-16"
+            container
+            spacing={2}
+            paddingY={2}
           >
-            All
-          </CustomButton>
-        </Grid>
-        <Grid component="div" md={2} xs={6} sm={6}>
-          <CustomButton
-            isactive={activeButton === 'pembuka'}
-            onClick={() => this.handleClick('pembuka')}
-          >
-            Pembuka
-          </CustomButton>
-        </Grid>
-        <Grid component="div" md={2} xs={6} sm={6}>
-          <CustomButton
-            isactive={activeButton === 'utama'}
-            onClick={() => this.handleClick('utama')}
-          >
-            Utama
-          </CustomButton>
-        </Grid>
-        <Grid component="div" md={2} xs={6} sm={6}>
-          <CustomButton
-            isactive={activeButton === 'penutup'}
-            onClick={() => this.handleClick('penutup')}
-          >
-            Penutup
-          </CustomButton>
-        </Grid>
-      </Grid>
-      <Grid
-        container
-        spacing={2}
-        paddingY={3}
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        {menus.map((menu) => (
-          <Grid component="div" key={menu.name} xs={9} sm={6} md={4} lg={3}>
-            <Card sx={{ maxWidth: 345, minHeight: 400, bgcolor: '#1A1A1A', color: '#FFFFFF' }}>
-              <CardHeader
-                avatar={
-                  <Avatar
-                    variant="rounded"
-                    sx={{ bgcolor: '#1A1A1A' }}
-                    aria-label="price"
-                    style={{ borderRight: '1px solid #DDDDDD' }}
-                  >
-                    {`$${menu.price}`}
-                  </Avatar>
-                }
-                title={menu.name}
-                subheader={`Hidangan ${menu.category}`}
-                subheaderTypographyProps={{ color: '#FFFFFF' }}
-              />
-              <CardMedia component="img" height="194" src={menu.image} alt="Paella dish" />
-              <CardContent>
-                <Typography variant="body2" color="textSecondary">
-                  {menu.description}
-                </Typography>
-              </CardContent>
-            </Card>
+            <Grid component="div" md={2} xs={6} sm={6} className="mx-3 mb-4">
+              <CustomButton
+                isactive={activeButton === "all"}
+                onClick={() => this.handleClick("all")}
+              >
+                All
+              </CustomButton>
+            </Grid>
+            <Grid component="div" md={2} xs={6} sm={6} className="mx-3 mb-4">
+              <CustomButton
+                isactive={activeButton === "pembuka"}
+                onClick={() => this.handleClick("pembuka")}
+              >
+                Pembuka
+              </CustomButton>
+            </Grid>
+            <Grid component="div" md={2} xs={6} sm={6} className="mx-3 mb-4">
+              <CustomButton
+                isactive={activeButton === "utama"}
+                onClick={() => this.handleClick("utama")}
+              >
+                Utama
+              </CustomButton>
+            </Grid>
+            <Grid component="div" md={2} xs={6} sm={6} className="mx-3 mb-4">
+              <CustomButton
+                isactive={activeButton === "penutup"}
+                onClick={() => this.handleClick("penutup")}
+              >
+                Penutup
+              </CustomButton>
+            </Grid>
           </Grid>
-        ))}
-      </Grid>
-    </Box>
-  );
-}
+          <Grid
+            className="container mx-auto px-10"
+            container
+            spacing={2}
+            paddingY={2}
+            paddingBottom={6}
+          >
+            {menus.map((menu) => (
+              <Grid component="div" key={menu.name} xs={9} sm={6} md={4} lg={3}>
+                <Card
+                  sx={{
+                    maxWidth: 345,
+                    minHeight: 400,
+                    marginX: 2,
+                    marginY: 2,
+                    bgcolor: "#2B2A32",
+                    color: "#FFFFFF",
+                  }}
+                >
+                  <CardHeader
+                    avatar={
+                      <Avatar
+                        variant="rounded"
+                        sx={{ bgcolor: "#1A1A1A" }}
+                        aria-label="price"
+                        style={{ borderRight: "1px solid #DDDDDD" }}
+                      >
+                        {`$${menu.price}`}
+                      </Avatar>
+                    }
+                    title={menu.name}
+                    subheader={`Hidangan ${menu.category}`}
+                    subheaderTypographyProps={{ color: "#FFFFFF" }}
+                  />
+                  <CardMedia
+                    component="img"
+                    style={{
+                      objectFit: "cover",
+                      width: "100%",
+                      height: "200px",
+                    }}
+                    src={menu.image}
+                    alt="Paella dish"
+                  />
+                  <CardContent>
+                    <Typography
+                      variant="body2"
+                      color="text-white"
+                      style={{ height: "160px" }}
+                    >
+                      {truncateText(menu.description, 10)}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
+      </div>
+    );
+  }
 }
