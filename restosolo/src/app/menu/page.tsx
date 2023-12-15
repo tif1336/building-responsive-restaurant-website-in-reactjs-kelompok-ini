@@ -128,6 +128,7 @@ export default class MenuContainer extends Component<{}, MenuContainerState> {
             spacing={2}
             paddingY={2}
             paddingBottom={18}
+            data-aos="fade-up"
           >
             {menus
               .filter(
