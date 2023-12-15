@@ -18,7 +18,7 @@ const Testimonial = () => {
 
   return (
     <div>
-      <section id="blog" className="pt-36 pb-32 bg-primary">
+      <section id="testimonial" className="pt-36 pb-32 bg-primary">
         <div className="container">
           <div className="w-full px-4">
             <div className="max-w-xl mx-auto text-center mb-16">
@@ -29,7 +29,7 @@ const Testimonial = () => {
           </div>
 
           <div className="flex flex-wrap justify-center">
-            <div className="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div className="w-full px-4 lg:w-1/2 xl:w-1/3" data-aos="fade-right">
               <div className="bg-secondary rounded-xl shadow-lg overflow-hidden mb-10">
                 <img src="https://source.unsplash.com/360x200?avatar" alt="Programming" className="w-full" />
                 <div className="py-8 px-6">
@@ -51,7 +51,7 @@ const Testimonial = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div className="w-full px-4 lg:w-1/2 xl:w-1/3" data-aos="fade-left">
               <div className="bg-secondary rounded-xl shadow-lg overflow-hidden mb-10">
                 <img src="https://source.unsplash.com/360x200?avatar" alt="Keyboard Mechanical" className="w-full" />
                 <div className="py-8 px-6">

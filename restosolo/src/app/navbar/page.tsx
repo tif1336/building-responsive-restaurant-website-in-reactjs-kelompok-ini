@@ -15,7 +15,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
-const pages = ["Home", "About", "Menu", "FAQ", "Blog", "Contact"];
+const pages = ["Home", "About", "Menu", "FAQ", "Testimonial", "Contact"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -38,6 +38,18 @@ function ResponsiveAppBar() {
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
+  };
+
+  const scrollTo = (id: string): void => {
+    const menuElement = document.getElementById(id);
+
+    if (menuElement) {
+      window.scrollTo({
+        top: menuElement.offsetTop - 75,
+        left: 0,
+        behavior: "smooth",
+      });
+    }
   };
 
   const [logo, setLogo] = React.useState();
@@ -75,7 +87,7 @@ function ResponsiveAppBar() {
               mr: 4,
             }}
             onClick={() => {
-              window.location.href = "/home";
+              scrollTo("home");
             }}
           />
           <Typography
@@ -125,8 +137,22 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem
+                  key={page}
+                  onClick={() => scrollTo(page.toLowerCase())}
+                >
+                  <Typography
+                    textAlign="center"
+                    sx={{
+                      ":hover": {
+                        color: "orange",
+                        border: "1px solid orange",
+                        borderRadius: "5px",
+                      },
+                    }}
+                  >
+                    {page}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -143,7 +169,7 @@ function ResponsiveAppBar() {
               mr: 1,
             }}
             onClick={() => {
-              window.location.href = "/home";
+              scrollTo("home");
             }}
           />
           <Typography
@@ -174,7 +200,7 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={() => scrollTo(page.toLowerCase())}
                 sx={{
                   my: 3,
                   mx: { lg: 2, md: 1 },
