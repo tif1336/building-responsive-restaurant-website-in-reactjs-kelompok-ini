@@ -9,6 +9,7 @@ import Footer from "./footer/page";
 import About from "./about/page";
 import Testimonial from "./testimonial/page";
 import MenuCard from "./menu/page";
+import TestimonialForm from "./form/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
         <MenuCard />
         <CustomizedAccordions />
         <Testimonial />
+        <TestimonialForm />
         <Footer />
 
         {children}
