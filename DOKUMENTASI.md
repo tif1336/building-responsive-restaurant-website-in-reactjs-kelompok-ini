@@ -75,10 +75,10 @@ Silahkan Anda tuliskan dokumentasi tugas Anda di sini:
     - Setting timeline and plan
 
 5. **Job Desc of Members**
+
     Aldin Nasrun Minalloh : 
     - Implement design to code (Navbar, Home, Menu, Footer)
     - Fetch APIs
-    - Set host
     - Deploy Backend
     - Deploy Frontend
     - Design
