@@ -1,95 +1,64 @@
 # Dokumentasi Tugas 2: Membuat Website Restoran dengan ReactJS
+
 ### Nama Kelompok: Kelompok Ini
+
 ### Anggota Kelompok
+
 ### 1. L200214208 Aldin Nasrun Minalloh
+
 ### 2. L200214167 Abdul Kadir Djaelani
+
 ### 3. L200214215 Tiara Indah Septy
 
 <br>
 
-## <h1 align="center">“Talk is cheap. Show me the code.” ~ Linus Torvalds:thought_balloon:</h1>
+Silahkan anda tuliskan dokumentasi tugas anda di sini:
 
-<br>
-  <p align="center">
-  <a><img src="https://i.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.webp" alt="image" width="500"></a>
-<br>
+A. TASKS DESCRIPTION 
+    1. React Framework (Front-End) 
+    2. Material UI (Front-End) 
+    3. Django (Back-End)
 
-# 🐱‍💻 Framework-based Restaurant Website Stack
-📌 React Framework (Front-end) <br>
-📌 Material UI 5 (Front-end) <br>
-📌 Django (Back-end) <br>
+B. HOSTING 
+    1. Vercel (Front-End) - Link (https://resto-solo-app-aldinnasrunm.vercel.app/) 
+    2. Railway (Back-End) - Link (https://resto-solo-app-production.up.railway.app/)
 
-<br> 
+C. TASKS PROGRESS 
+    1. Open VS Code, Git Bash terminal, and clone the repository
+        git clone https://github.com/tif1336/building-responsive-restaurant-website-in-reactjs-kelompok-ini.git 
+    2. Install NPM
+        npm install 
+    3. Install Material 
+        - Default (npm install @mui/material @emotion/react @emotion/styled) 
+        - Component (npm install @mui/material @mui/styled-engine-sc styled-components) 
+        - Icons (npm install @mui/icons-material) 
+    4. Run the website
+        npm start
 
-## Hosting
-Front-end (Vercel): https://resto-solo-app.vercel.app/ <br>
-Back-end (Railway): https://resto-solo-app-production.up.railway.app/ 
-<br>
+D. TASKS OVERVIEW 
+    1. Front-End Developer
+        a. Implementing the UI of the website
+        b. Creating interactive website
+        c. Using JavaScript, TypeScript, CSS, Python, Next.js
 
-## 🏷 To Run
-1. visit: [Website Restoran Keluarga Solo](https://resto-solo-app.vercel.app/)
+    2. Back-End Developer
+        a. Setting the server-side
+        b. Connecting front-end to back-end via APIs
 
-<br>
+    3. Collaborative Tasks
+        a. UI/UX design
+        b. Testing and debugging
 
-## 🏷 To get started
+    4. Project Management
+        a. Dividing the workload based on each expertise
+        b. Communicating and discussing the progress update
+        c. Setting timeline and plan
 
-1. Clone the repository to your local machine.
-bash
-git clone https://github.com/tif1336/tugas-2-membuat-website-restoran-dengan-reactjs-kelompok-12.git
+    5. Job Desc of Members
+        a. Aldin: Fetch APIs, set host, deploy backend,
+        b. Abdul: Implement deisgn to code (Home, Navbar, Testimonial, About, FAQ, Footer), fetch APIs, design, function logic handling responsive, add feedback form
+        c. Tiara: Implement design to code (Footer, About, FAQ, Testimonial, Home), design, function logic, styling, documenting, copywriting
 
-  - or simply download the file project through Kelompok 12 page
-
-2. Open project directory in your local machine
-
-3. Activate virtual environment
-
-For MacOs dan Linux (Bash atau Zsh Shell)
-bash
-source .venv/bin/activate
- 
-For Windows Command Shell
-bash
-.venv\Scripts\activate
-
-4. Run server
-bash
-python manage.py runserver
-
-
-5. Open the whole project in VSCode (Or other IDE)
-6. Install Icon Material (for drawer, this is added to gitignore in default)
-bash
-npm install @mui/icons-material
-
-7. Run website in IDE terminal
-bash
-cd .\website\
-
-bash
-npm start
-
-8. Enjoy
-
-<br>
-
-# Job Description 
-
-Abdul Khadir Djaelani:
-- Implement Design to code (Hero Section, Footer, Menu)
-
-
-Aldin Nasrun Minalloh:
-- Implement Design to code (Navbar)
-- Deploy FE
-- Deploy BE
-- Fetch API
-
-
-Tiara Indah Septy: 
-- Implement Design to code (About Us)
-- Gathering asset
-- Design
-
-# Resources
-- https://resto-solo-app.vercel.app/
-- https://resto-solo-app-production.up.railway.app/ 
+E. RESOURCES 
+    1. https://mui.com/material-ui/react-accordion/ 
+    2.
