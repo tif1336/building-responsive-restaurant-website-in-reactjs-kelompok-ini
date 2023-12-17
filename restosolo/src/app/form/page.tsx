@@ -68,9 +68,9 @@ const TestimonialForm = () => {
               <input
                 type="text"
                 id="name"
-                name="name"  // tambahkan properti name pada input
-                value={formData.name}  // tambahkan properti value pada input
-                onChange={handleChange} // tambahkan properti onChange pada input
+                name="name" 
+                value={formData.name} 
+                onChange={handleChange}
                 className="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
               />
             </div>
@@ -83,9 +83,9 @@ const TestimonialForm = () => {
               </label>
               <textarea
                 id="message"
-                name="description"  // tambahkan properti name pada textarea
-                value={formData.description}  // tambahkan properti value pada textarea
-                onChange={handleChange} // tambahkan properti onChange pada textarea
+                name="description"
+                value={formData.description} 
+                onChange={handleChange}
                 className="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"
               ></textarea>
             </div>
