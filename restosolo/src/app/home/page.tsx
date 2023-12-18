@@ -22,7 +22,7 @@ const Home = () => {
           <div className="flex flex-wrap">
             <div className="w-full self-center px-4 lg:w-1/2" data-aos="fade-up">
               <span className="block font-bold text-white text-center text-4xl mt-1 lg:text-5xl leading-9" style={{ lineHeight: "1.2" }}>
-                VISIT OUR RESTO SOLO FOODs AND BEVERAGES
+                VISIT OUR RESTO SOLO FOODS AND BEVERAGES
               </span>
             </div>
             <div className="w-full self-end px-4 lg:w-1/2">

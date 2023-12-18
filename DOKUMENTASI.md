@@ -1,95 +1,110 @@
 # Dokumentasi Tugas 2: Membuat Website Restoran dengan ReactJS
-### Nama Kelompok: Kelompok Ini
+
+## Nama Kelompok: Kelompok Ini
+
 ### Anggota Kelompok
-### 1. L200214208 Aldin Nasrun Minalloh
-### 2. L200214167 Abdul Kadir Djaelani
-### 3. L200214215 Tiara Indah Septy
+
+1. L200214208 Aldin Nasrun Minalloh
+2. L200214167 Abdul Kadir Djaelani
+3. L200214215 Tiara Indah Septy
 
 <br>
 
-## <h1 align="center">“Talk is cheap. Show me the code.” ~ Linus Torvalds:thought_balloon:</h1>
+Silahkan Anda tuliskan dokumentasi tugas Anda di sini:
 
-<br>
-  <p align="center">
-  <a><img src="https://i.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.webp" alt="image" width="500"></a>
-<br>
+## A. TASKS DESCRIPTION 
 
-# 🐱‍💻 Framework-based Restaurant Website Stack
-📌 React Framework (Front-end) <br>
-📌 Material UI 5 (Front-end) <br>
-📌 Django (Back-end) <br>
+1. React Framework (Front-End)
+2. Material UI (Front-End)
+3. Django (Back-End)
 
-<br> 
+## B. HOSTING
 
-## Hosting
-Front-end (Vercel): https://resto-solo-app.vercel.app/ <br>
-Back-end (Railway): https://resto-solo-app-production.up.railway.app/ 
-<br>
+1. Vercel (Front-End) - [Link](https://resto-solo-app-aldinnasrunm.vercel.app/)
+2. Railway (Back-End) - [Link](https://resto-solo-app-production.up.railway.app/)
 
-## 🏷 To Run
-1. visit: [Website Restoran Keluarga Solo](https://resto-solo-app.vercel.app/)
+## C. TASKS PROGRESS
 
-<br>
+1. Open VS Code, Git Bash terminal, and clone the repository
+    ```bash
+    git clone https://github.com/tif1336/building-responsive-restaurant-website-in-reactjs-kelompok-ini.git
+    ```
 
-## 🏷 To get started
+2. Install NPM
+    ```bash
+    npm install
+    ```
 
-1. Clone the repository to your local machine.
-bash
-git clone https://github.com/tif1336/tugas-2-membuat-website-restoran-dengan-reactjs-kelompok-12.git
+3. Install Material
+    - Default 
+        ```bash
+        npm install @mui/material @emotion/react @emotion/styled
+        ```
+    - Component
+        ```bash
+        npm install @mui/material @mui/styled-engine-sc styled-components
+        ```
+    - Icons
+        ```bash
+        npm install @mui/icons-material
+        ```
 
-  - or simply download the file project through Kelompok 12 page
+4. Run the website
+    ```bash
+    npm run dev
+    ```
 
-2. Open project directory in your local machine
+## D. TASKS OVERVIEW
 
-3. Activate virtual environment
+1. **Front-End Developer**
+    - Implementing the UI of the website
+    - Creating interactive website
+    - Using JavaScript, TypeScript, CSS, Python, Next.js
 
-For MacOs dan Linux (Bash atau Zsh Shell)
-bash
-source .venv/bin/activate
- 
-For Windows Command Shell
-bash
-.venv\Scripts\activate
+2. **Back-End Developer**
+    - Setting the server-side
+    - Connecting front-end to back-end via APIs
 
-4. Run server
-bash
-python manage.py runserver
+3. **Collaborative Tasks**
+    - UI/UX design
+    - Testing and debugging
 
+4. **Project Management**
+    - Dividing the workload based on each expertise
+    - Communicating and discussing the progress update
+    - Setting timeline and plan
 
-5. Open the whole project in VSCode (Or other IDE)
-6. Install Icon Material (for drawer, this is added to gitignore in default)
-bash
-npm install @mui/icons-material
+5. **Job Desc of Members**
 
-7. Run website in IDE terminal
-bash
-cd .\website\
-
-bash
-npm start
-
-8. Enjoy
-
-<br>
-
-# Job Description 
-
-Abdul Khadir Djaelani:
-- Implement Design to code (Hero Section, Footer, Menu)
-
-
-Aldin Nasrun Minalloh:
-- Implement Design to code (Navbar)
-- Deploy FE
-- Deploy BE
-- Fetch API
+    Aldin Nasrun Minalloh : 
+    - Implement design to code (Navbar, Home, Menu, Footer)
+    - Fetch APIs
+    - Deploy Backend
+    - Deploy Frontend
+    - Design
+    - Function logic
+    - Handling responsive
 
 
-Tiara Indah Septy: 
-- Implement Design to code (About Us)
-- Gathering asset
-- Design
+    Abdul Kadir Djaelani : 
+    - Implement design to code (Navbar, Home, About, Menu, FAQ, Testimonial, Feedback, Footer)
+    - Fetch APIs
+    - Design
+    - Function logic
+    - Handling responsive
+    - Added an endpoint for Customer Testimonials
+    - Create a feedback form and integrated it into the testimonials section
 
-# Resources
-- https://resto-solo-app.vercel.app/
-- https://resto-solo-app-production.up.railway.app/ 
+
+    Tiara Indah Septy : 
+    - Implement design to code (Footer, About, FAQ, Testimonial, Home)
+    - Design
+    - Function logic
+    - Styling
+    - Documenting
+    - Copywriting
+
+## E. RESOURCES
+
+1. [Material-UI React](https://mui.com/material-ui/)
+2. [Github Copilot](https://github.com/features/copilot)
