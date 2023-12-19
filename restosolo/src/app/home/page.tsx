@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const Home = () => {
+const HomePage = () => {
   useEffect(() => {
     // Initialize AOS
     AOS.init({
@@ -37,4 +37,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

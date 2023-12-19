@@ -1,5 +1,5 @@
 import ResponsiveAppBar from "./navbar/page";
-// import Home from "./home/page";
+import HomePage from "./home/page";
 import CustomizedAccordions from "./faq/page";
 import Footer from "./footer/page";
 import About from "./about/page";
@@ -11,6 +11,7 @@ import TestimonialForm from "./form/page";
 export default function Home() {
   return (
     <>
+        <HomePage />
         <About />
         <MenuCard />
         <CustomizedAccordions />
