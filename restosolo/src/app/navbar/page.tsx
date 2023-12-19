@@ -14,6 +14,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import Link from "next/link";
 
 const pages = ["Home", "About", "Menu", "FAQ", "Testimonial", "Feedback"];
 
@@ -169,9 +170,12 @@ function ResponsiveAppBar() {
               mr: 1,
             }}
             onClick={() => {
+              window.location.href = "/";
               scrollTo("home");
+              console.log("clicked");
             }}
           />
+
           <Typography
             variant="h5"
             noWrap
@@ -185,6 +189,11 @@ function ResponsiveAppBar() {
               fontWeight: 700,
               color: "inherit",
               textDecoration: "none",
+            }}
+            onClick={() => {
+              window.location.href = "/";
+              scrollTo("home");
+              console.log("clicked");
             }}
           >
             Resto Solo
@@ -200,7 +209,14 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={() => scrollTo(page.toLowerCase())}
+                onClick={() => {
+                  // scrollTo(page.toLowerCase())
+                  // window.location.href = `/${page.toLowerCase()}`;
+                  window.location.href = '/';
+
+                  scrollTo(page.toLowerCase());
+                  console.log("clicked");
+                }}
                 sx={{
                   my: 3,
                   mx: { lg: 2, md: 1 },
