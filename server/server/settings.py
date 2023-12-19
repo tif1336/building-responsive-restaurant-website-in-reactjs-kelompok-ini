@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     # local apps
+    'author.apps.AuthorConfig',
     'menus.apps.MenusConfig',
     'profiles.apps.ProfilesConfig',
     'testimonial.apps.TestimonialConfig',

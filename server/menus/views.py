@@ -15,4 +15,4 @@ class MenuView(generics.ListAPIView):
 class MenuDetailView(generics.RetrieveAPIView):
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
-    
+
