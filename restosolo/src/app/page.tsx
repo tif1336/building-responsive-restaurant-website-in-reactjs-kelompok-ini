@@ -6,7 +6,7 @@ import About from "./about/page";
 import Testimonial from "./testimonial/page";
 import MenuCard from "./menu/page";
 import TestimonialForm from "./form/page";
-
+import Author from "./author/page";
 
 export default function Home() {
   return (
@@ -17,6 +17,7 @@ export default function Home() {
         <CustomizedAccordions />
         <Testimonial />
         <TestimonialForm />
+        <Author/>
     </>
   );
 }

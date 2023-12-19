@@ -47,7 +47,7 @@ const TestimonialForm = () => {
         <div className="w-full px-4">
           <div className="max-w-xl mx-auto text-center mb-16">
             <h4 className="font-semibold text-lg text-orange-600 mb-2">Feedback</h4>
-            <h2 className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="font-bold text-3xl mb-4 sm:text-4xl lg:text-5xl text-white">
               Give Us Your Testimonial
             </h2>
             <p className="font-medium text-md text-white opacity-70 md:text-lg">

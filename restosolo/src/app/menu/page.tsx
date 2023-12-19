@@ -148,7 +148,7 @@ export default class MenuContainer extends Component<{}, MenuContainerState> {
                   lg={3}
                 >
 
-                  <Link href={`/detail`}>
+                  <Link href={`/menu/${menu.id}`}>
                   <Card
                     sx={{
                       maxWidth: 345,

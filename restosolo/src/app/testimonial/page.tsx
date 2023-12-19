@@ -30,7 +30,7 @@ const Testimonial = () => {
       >
         <div className="bg-secondary rounded-xl shadow-lg overflow-hidden mb-10">
           <img
-            src="https://source.unsplash.com/360x200?avatar"
+            src="../../avataaars.svg"
             alt="Avatar"
             className="w-full"
           />
