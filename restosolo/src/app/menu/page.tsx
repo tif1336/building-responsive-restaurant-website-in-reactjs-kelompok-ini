@@ -12,6 +12,7 @@ import {
   Typography,
 } from "@mui/material";
 import CustomButton from "./button";
+import Link from "next/link";
 
 function truncateText(text: string, sentenceCount: number): string {
   const sentences = text.split(". ");
@@ -23,6 +24,7 @@ function truncateText(text: string, sentenceCount: number): string {
 }
 
 interface MenuApi {
+  id: number;
   name: string;
   image: string;
   price: number;
@@ -145,6 +147,8 @@ export default class MenuContainer extends Component<{}, MenuContainerState> {
                   md={4}
                   lg={3}
                 >
+
+                  <Link href={`/menu/${menu.id}`}>
                   <Card
                     sx={{
                       maxWidth: 345,
@@ -190,6 +194,8 @@ export default class MenuContainer extends Component<{}, MenuContainerState> {
                       </Typography>
                     </CardContent>
                   </Card>
+                  </Link>
+                  
                 </Grid>
               ))}
           </Grid>

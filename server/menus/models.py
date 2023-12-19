@@ -15,7 +15,7 @@ class Menu(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     name = models.CharField(max_length=128)
     image = models.ImageField(upload_to='images/')
-    price = models.FloatField()
+    price = models.FSloatField()
     description = models.TextField()
 
     def __str__(self) -> str:
@@ -23,3 +23,6 @@ class Menu(models.Model):
 
     class Meta:
         verbose_name_plural = 'Menus'
+
+
+# per item
