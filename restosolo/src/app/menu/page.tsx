@@ -102,7 +102,7 @@ export default class MenuContainer extends Component<{}, MenuContainerState> {
                 isactive={activeButton === "pembuka"}
                 onClick={() => this.handleClick("pembuka")}
               >
-                Pembuka
+                Appetizer
               </CustomButton>
             </Grid>
             <Grid component="div" md={2} xs={6} sm={6} className="mx-3 mb-4">
@@ -110,7 +110,7 @@ export default class MenuContainer extends Component<{}, MenuContainerState> {
                 isactive={activeButton === "utama"}
                 onClick={() => this.handleClick("utama")}
               >
-                Utama
+                Main Course
               </CustomButton>
             </Grid>
             <Grid component="div" md={2} xs={6} sm={6} className="mx-3 mb-4">
@@ -118,7 +118,7 @@ export default class MenuContainer extends Component<{}, MenuContainerState> {
                 isactive={activeButton === "penutup"}
                 onClick={() => this.handleClick("penutup")}
               >
-                Penutup
+                Dessert
               </CustomButton>
             </Grid>
           </Grid>
@@ -167,7 +167,7 @@ export default class MenuContainer extends Component<{}, MenuContainerState> {
                         </Avatar>
                       }
                       title={menu.name}
-                      subheader={`Hidangan ${menu.category}`}
+                      subheader={`Dish - ${menu.category}`}
                       subheaderTypographyProps={{ color: "#FFFFFF" }}
                     />
                     <CardMedia
