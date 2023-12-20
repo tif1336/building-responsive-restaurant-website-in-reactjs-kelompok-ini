@@ -47,7 +47,7 @@ const TestimonialForm = () => {
         <div className="w-full px-4">
           <div className="max-w-xl mx-auto text-center mb-16">
             <h4 className="font-semibold text-lg text-orange-600 mb-2">Feedback</h4>
-            <h2 className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">
+            <h2 className="font-bold text-3xl mb-4 sm:text-4xl lg:text-5xl text-white">
               Give Us Your Testimonial
             </h2>
             <p className="font-medium text-md text-white opacity-70 md:text-lg">
@@ -68,9 +68,9 @@ const TestimonialForm = () => {
               <input
                 type="text"
                 id="name"
-                name="name"  // tambahkan properti name pada input
-                value={formData.name}  // tambahkan properti value pada input
-                onChange={handleChange} // tambahkan properti onChange pada input
+                name="name" 
+                value={formData.name} 
+                onChange={handleChange}
                 className="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
               />
             </div>
@@ -83,9 +83,9 @@ const TestimonialForm = () => {
               </label>
               <textarea
                 id="message"
-                name="description"  // tambahkan properti name pada textarea
-                value={formData.description}  // tambahkan properti value pada textarea
-                onChange={handleChange} // tambahkan properti onChange pada textarea
+                name="description"
+                value={formData.description} 
+                onChange={handleChange}
                 className="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"
               ></textarea>
             </div>

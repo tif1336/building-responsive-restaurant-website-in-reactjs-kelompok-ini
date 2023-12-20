@@ -1,5 +1,6 @@
 import { styled } from '@mui/system';
 import { Typography } from '@mui/material';
+import { wrap } from 'module';
 
 interface CustomButtonProps {
   isactive: boolean;
@@ -32,19 +33,26 @@ const CustomButton = styled(Typography)<CustomButtonProps>(({ theme, isactive })
       },
   [theme.breakpoints.down("md")]: {
     width: "80%",
+    margin: "0 auto",
+    
+
   },
   [theme.breakpoints.down("sm")]: {
     width: "60%",
     display: "flex",
+    margin: "0 auto",
     justifyContent: "center",
     alignItems: "center",
     padding: "0.5rem 2rem",
+    textAlign: "center",
   },
   [theme.breakpoints.down("xs")]: {
     width: "40%",
     display: "flex",
+    margin: "0 auto",
     justifyContent: "center",
     alignItems: "center",
+    textAlign: "center",
   },
 }));
 

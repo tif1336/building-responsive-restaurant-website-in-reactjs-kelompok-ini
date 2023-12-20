@@ -27,15 +27,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ResponsiveAppBar />
-        <Home />
-        <About />
-        <MenuCard />
-        <CustomizedAccordions />
-        <Testimonial />
-        <TestimonialForm />
+        {children}
+        
         <Footer />
 
-        {children}
       </body>
     </html>
   );

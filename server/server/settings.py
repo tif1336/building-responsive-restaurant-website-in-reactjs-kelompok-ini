@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     # local apps
+    'author.apps.AuthorConfig',
     'menus.apps.MenusConfig',
     'profiles.apps.ProfilesConfig',
     'testimonial.apps.TestimonialConfig',
@@ -131,6 +132,16 @@ STATIC_ROOT = 'static'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+CORS_ALLOWED_ORIGINS = [
+    'https://resto-solo-app-production.up.railway.app',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://resto-solo-app-production.up.railway.app'
+]
+
 
 # CORS
 CORS_ORIGIN_ALLOW_ALL = True  # hanya digunakan untuk development
+
+
