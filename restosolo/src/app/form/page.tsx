@@ -48,11 +48,11 @@ const TestimonialForm = () => {
           <div className="max-w-xl mx-auto text-center mb-16">
             <h4 className="font-semibold text-lg text-orange-600 mb-2">Feedback</h4>
             <h2 className="font-bold text-3xl mb-4 sm:text-4xl lg:text-5xl text-white">
-              Give Us Your Testimonial
+              Share Your Experience with Us
             </h2>
             <p className="font-medium text-md text-white opacity-70 md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
-              quasi.
+            We look forward to hearing your stories and sharing them with the world, as we continue 
+            to weave the narrative of our restaurant's legacy together.
             </p>
           </div>
         </div>
