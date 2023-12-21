@@ -1,10 +1,12 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Rating from "@mui/material/Rating";
 
 interface TestimonialApi {
   name: string;
   description: string;
+  rating: number;
 }
 
 const Testimonial = () => {
@@ -29,17 +31,17 @@ const Testimonial = () => {
         }`}
       >
         <div className="bg-secondary rounded-xl shadow-lg overflow-hidden mb-10">
-          <img
-            src="../../avataaars.svg"
-            alt="Avatar"
-            className="w-full"
-          />
           <div className="py-8 px-6">
             <h3>
               <a className="block mb-3 font-semibold text-xl text-dark hover:text-orange-600 truncate">
                 {item.name}
               </a>
             </h3>
+            <Rating
+              name="read-only"
+              value={item.rating}
+              readOnly
+            />
             <p className="font-medium text-base text-white opacity-40 mb-6">
               {item.description}
             </p>
