@@ -41,7 +41,7 @@ export default function Author() {
                     <div key={index} className="mx-auto flex flex-col md:flex-row w-full md:w-1/2 lg:w-1/3">
                         <div className="w-full md:w-56 lg:w-72  my-2 mx-auto bg-secondary p-8 rounded-lg shadow-md">
                             <div className="mb-4">
-                                <Image src={item.image} alt="Profile Picture" className="w-20 h-20 rounded-full mx-auto" />
+                                <Image src={item.image} width={300} height={300} alt="Profile Picture" className="w-20 h-20 rounded-full mx-auto" />
                             </div>
 
                             <h2 className="text-xl font-semibold text-white text-center mb-2">{item.name}</h2>

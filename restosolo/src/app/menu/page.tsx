@@ -141,6 +141,7 @@ export default class MenuContainer extends Component<{}, MenuContainerState> {
               .map((menu) => (
                 <Grid
                   component="div"
+                  className="mx-auto"
                   key={menu.name}
                   xs={9}
                   sm={6}

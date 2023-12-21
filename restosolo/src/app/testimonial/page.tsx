@@ -30,11 +30,12 @@ const Testimonial = () => {
         }`}
       >
         <div className="bg-secondary rounded-xl shadow-lg overflow-hidden mb-10">
-          <Image
+          {/* <Image
+            
             src={"../../avataaars.svg"}
             alt="Avatar"
             className="w-full"
-          />
+          /> */}
           <div className="py-8 px-6">
             <h3>
               <a className="block mb-3 font-semibold text-xl text-dark hover:text-orange-600 truncate">
