@@ -30,11 +30,7 @@ export default function ProductDetails({ params }: Props) {
         fetchMenu();
     }, []);
 
-    // const fetchAuthor = () => {
-    //     fetch("https://resto-solo-app-production.up.railway.app/api/menus/{params.menuid}}")
-    //         .then((response) => response.json())
-    //         .then((data) => setAuthor(data));
-    // };
+  
     const url = `https://resto-solo-app-production.up.railway.app/api/menus/${params.menuid}/`;
     const fetchMenu = () => {
         fetch(url)
@@ -42,10 +38,6 @@ export default function ProductDetails({ params }: Props) {
             .then((data) => setMenu(data));
     };
 
-    console.log(menu);
-    console.log(url);
-
-    // return <h1>Details about product {params.menuid}</h1>;
     return (
         <div className="w-full flex bg-primary justify-center align-middle py-80">
             <div className="w-1/2 flex justify-center align-middle">

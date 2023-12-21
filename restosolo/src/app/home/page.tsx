@@ -2,6 +2,7 @@
 
 import React from "react";
 import AOS from "aos";
+import Image from "next/image";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
@@ -27,7 +28,7 @@ const HomePage = () => {
             </div>
             <div className="w-full self-end px-4 lg:w-1/2">
               <div className="relative mt-10 lg:mt-9 lg:right-0" data-aos="fade-left">
-                <img width="736" height="491" src="/images/home.png" alt="resto solo" className="relative z-10 max-w-full mx-auto" />
+                <Image src={"/images/home.png"} width={736} height={491}  alt="resto solo" className="relative z-10 max-w-full mx-auto" />
               </div>
             </div>
           </div>
