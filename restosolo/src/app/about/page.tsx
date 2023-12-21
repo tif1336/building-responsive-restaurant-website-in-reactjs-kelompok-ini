@@ -2,6 +2,7 @@
 
 import React from "react";
 import AOS from "aos";
+import Image from "next/image";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
@@ -57,7 +58,10 @@ const About = () => {
           <div className="flex flex-wrap">
             <div className="w-full self-end px-4 lg:w-1/2">
               <div className="relative mt-10 lg:mt-9 lg:right-0 mb-10 leading-5" data-aos="fade-right">
-                <img width="460" height="690" src="/images/about.png" alt="resto solo" className="relative z-10 max-w-full mx-auto" />
+                {/* <img width="460" height="690" src="/images/about.png" alt="resto solo" className="relative z-10 max-w-full mx-auto" /> */}
+
+              <Image src={"/images/about.png"} width={460} height={690} alt="resto solo" className="relative z-10 max-w-full mx-auto" />
+
               </div>
             </div>
             <div className="w-full self-center px-4 lg:w-1/2" data-aos="fade-left">

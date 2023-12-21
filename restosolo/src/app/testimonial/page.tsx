@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 interface TestimonialApi {
   name: string;
@@ -29,8 +30,8 @@ const Testimonial = () => {
         }`}
       >
         <div className="bg-secondary rounded-xl shadow-lg overflow-hidden mb-10">
-          <img
-            src="../../avataaars.svg"
+          <Image
+            src={"../../avataaars.svg"}
             alt="Avatar"
             className="w-full"
           />
