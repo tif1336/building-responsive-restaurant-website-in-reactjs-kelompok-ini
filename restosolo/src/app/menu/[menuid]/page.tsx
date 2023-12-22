@@ -35,15 +35,15 @@ export default function ProductDetails({ params }: Props) {
   };
 
   return (
-    <div className="w-full flex bg-primary justify-center align-middle pt-20 pb-24">
-      <div className="w-1/2 flex justify-center align-middle">
+    <div className="w-full flex flex-col bg-primary justify-center align-middle pt-20 pb-24 md:flex-row ">
+      <div className="w-full flex justify-center align-middle lg:w-1/2">
         <div
           className="w-4/5 h-[480px] my-auto bg-cover rounded-2xl"
           style={{ backgroundImage: `url(${menu.image})` }}
         ></div>
       </div>
-      <div className="w-1/2 flex-row my-auto text-white pr-60">
-        <p className="text-2xl text-orange-500 font-semibold border-2 border-b-orange-500 border-x-primary border-t-primary w-fit px-2 mb-4">
+      <div className="w-full flex-col my-auto px-10 mt-10 text-white mx-auto lg:w-1/2 lg:pr-20 lg:px-0 lg:mt-0">
+        <p className="text-2xl text-orange-500 font-semibold border-2 border-b-orange-500 border-x-primary border-t-primary px-2 mb-4">
           {menu.category}
         </p>
         <h3 className="text-6xl font-bold">{menu.name}</h3>
