@@ -102,24 +102,24 @@ export default class MenuContainer extends Component<{}, MenuContainerState> {
             </Grid>
             <Grid component="div" md={2} xs={6} sm={6} className="mx-3 mb-4">
               <CustomButton
-                isactive={activeButton === "pembuka"}
-                onClick={() => this.handleClick("pembuka")}
+                isactive={activeButton === "appetizer"}
+                onClick={() => this.handleClick("appetizer")}
               >
                 Appetizer
               </CustomButton>
             </Grid>
             <Grid component="div" md={2} xs={6} sm={6} className="mx-3 mb-4">
               <CustomButton
-                isactive={activeButton === "utama"}
-                onClick={() => this.handleClick("utama")}
+                isactive={activeButton === "main course"}
+                onClick={() => this.handleClick("main course")}
               >
                 Main Course
               </CustomButton>
             </Grid>
             <Grid component="div" md={2} xs={6} sm={6} className="mx-3 mb-4">
               <CustomButton
-                isactive={activeButton === "penutup"}
-                onClick={() => this.handleClick("penutup")}
+                isactive={activeButton === "dessert"}
+                onClick={() => this.handleClick("dessert")}
               >
                 Dessert
               </CustomButton>

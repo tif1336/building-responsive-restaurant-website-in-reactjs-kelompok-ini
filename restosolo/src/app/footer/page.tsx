@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="text-slate-300">
                 <a
-                  href="#portfolio"
+                  href="#menu"
                   className="inline-block text-base hover:text-orange-600 mb-3"
                 >
                   Menu
@@ -94,7 +94,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="text-slate-300">
                 <a
-                  href="#clients"
+                  href="#faq"
                   className="inline-block text-base hover:text-orange-600 mb-3"
                 >
                   FAQ
@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="text-slate-300">
                 <a
-                  href="#blog"
+                  href="#testimonial"
                   className="inline-block text-base hover:text-orange-600 mb-3"
                 >
                   Testimonial
