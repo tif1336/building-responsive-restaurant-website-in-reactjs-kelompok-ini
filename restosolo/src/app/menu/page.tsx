@@ -60,7 +60,7 @@ export default class MenuContainer extends Component<{}, MenuContainerState> {
     const { menus, activeButton } = this.state;
 
     return (
-      <div id="menu" className="bg-primary">
+      <div id="menu" className="bg-primary flex flex-col">
         <Typography
           variant="h5"
           noWrap
@@ -83,6 +83,7 @@ export default class MenuContainer extends Component<{}, MenuContainerState> {
           Our Menu
         </Typography>
         <Box
+          className="mx-auto"
           sx={{ flexGrow: 1, alignItems: "center", justifyContent: "center" }}
         >
           <Grid
