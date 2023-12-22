@@ -84,6 +84,9 @@ Silahkan Anda tuliskan dokumentasi tugas Anda di sini:
     - Design
     - Function logic
     - Handling responsive
+    - Fixing build
+    - fixing layout
+    - Details Menu
 
 
     Abdul Kadir Djaelani : 
