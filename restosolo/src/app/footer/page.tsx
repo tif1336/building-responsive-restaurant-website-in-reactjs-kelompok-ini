@@ -111,6 +111,7 @@ const Footer: React.FC = () => {
               <li className="text-slate-300">
                 <a
                   href="#contact"
+                  
                   className="inline-block text-base hover:text-orange-600 mb-3"
                 >
                   Feedback
