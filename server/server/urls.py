@@ -24,7 +24,10 @@ from rest_framework.schemas import get_schema_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/menus/', include('menus.urls')),
+    path('api/testimonial/', include('testimonial.urls')),
     path('api/', include('profiles.urls')),
+    path('api/author', include('author.urls')),
+    # path('api/menus/<int:pk>/', include('menus.urls')),
     path('swagger-ui/', TemplateView.as_view(
         template_name='swagger-ui.html',
         extra_context={'schema_url':'openapi-schema'}

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-9+ndv47%ub&^a4y91mflepyc3je96tit@@6szr356rqbw-98db
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['resto-solo-app-production.up.railway.app', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -41,8 +41,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     # local apps
+    'author.apps.AuthorConfig',
     'menus.apps.MenusConfig',
     'profiles.apps.ProfilesConfig',
+    'testimonial.apps.TestimonialConfig',
 ]
 
 MIDDLEWARE = [
@@ -130,6 +132,16 @@ STATIC_ROOT = 'static'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+CORS_ALLOWED_ORIGINS = [
+    'https://resto-solo-app-production.up.railway.app',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://resto-solo-app-production.up.railway.app'
+]
+
 
 # CORS
 CORS_ORIGIN_ALLOW_ALL = True  # hanya digunakan untuk development
+
+
