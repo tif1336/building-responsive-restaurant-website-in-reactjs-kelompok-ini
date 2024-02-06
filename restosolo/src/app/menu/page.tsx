@@ -61,7 +61,7 @@ export default class MenuContainer extends Component<{}, MenuContainerState> {
 
     return (
       <div id="menu" className="bg-primary flex flex-col">
-        <h4 className="font-semibold text-lg text-orange-600 mb-6">Our Menu</h4>
+        <h4 className="font-semibold text-center text-lg text-orange-600 mb-6">Our Menu</h4>
         <Box
           className="mx-auto"
           sx={{ flexGrow: 1, alignItems: "center", justifyContent: "center" }}
